@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define ll long long
+#define all(x) (x).begin(), (x).end()
+#define pb push_back
+#define ff first
+#define ss second
+#define pll pair<long long,long long>
+
+void _lord_of_the_mysteries() 
+{
+    string n;cin>>n;
+    vector<string> a={"25","50","75","00"};
+    
+}
+
+int main() 
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int t;cin>>t;
+    while (t--) 
+    _lord_of_the_mysteries();
+    return 0;
+}
