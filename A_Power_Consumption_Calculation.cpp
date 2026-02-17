@@ -11,6 +11,7 @@ using namespace std;
 void _lord_of_the_mysteries() 
 {
     
+    
 }
 
 int main() 
