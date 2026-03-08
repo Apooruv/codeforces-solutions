@@ -6,28 +6,20 @@ using namespace std;
 #define pb push_back
 #define ff first
 #define ss second
+#define pll pair<long long,long long>
 
-
-void solve() 
+void _lord_of_the_mysteries() 
 {
-    int n;cin>>n;
-    int mini=INT_MAX;
-    while(n--)
-    {
-        int x;cin>>x;
-        mini=min(mini,abs(x));
-    }
-    cout<<mini<<"\n";
+    
 }
-
-
 
 int main() 
 {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    
-    solve();
+    int t;cin>>t;
+    while (t--) 
+    _lord_of_the_mysteries();
     return 0;
 }
