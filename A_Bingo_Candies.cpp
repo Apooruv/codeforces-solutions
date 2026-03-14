@@ -10,17 +10,21 @@ using namespace std;
 
 void _lord_of_the_mysteries() 
 {
-    ll n,m,l;cin>>n>>m>>l;
-    vector<ll> a(n);
+    ll n;cin>>n;
+    ll maxi=0;
+    unordered_map<ll,ll> a;
     for(ll i=0;i<n;i++)
     {
-        cin>>a[i];
+        for(ll j=0;j<n;j++)
+        {ll x;cin>>x;
+        a[x]++;
+        maxi=max(maxi,a[x]);}
     }
-    for(int i=0;i<n;i++)
-    {
-        int x=n-i;
-        
-    }
+    if(maxi<=(n-1)*n)
+    cout<<"YES\n";
+    else
+    cout<<"NO\n";
+    return;
 }
 
 int main() 

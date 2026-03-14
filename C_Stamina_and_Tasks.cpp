@@ -10,17 +10,20 @@ using namespace std;
 
 void _lord_of_the_mysteries() 
 {
-    ll n,m,l;cin>>n>>m>>l;
-    vector<ll> a(n);
+    ll n;cin>>n;
+    vector<pll> a(n);
     for(ll i=0;i<n;i++)
     {
-        cin>>a[i];
+        cin>>a[i].ff>>a[i].ss;
     }
-    for(int i=0;i<n;i++)
+    double maxi=0.0;
+    for(ll i=n-1;i>=0;i--)
     {
-        int x=n-i;
-        
+        double t=a[i].ff+(1.0-a[i].ss/100.0)*maxi;
+        maxi=max(t,maxi);
     }
+    cout<<fixed<<setprecision(10)<<maxi<<"\n";
+    return;
 }
 
 int main() 
